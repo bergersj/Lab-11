@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  border-style: solid;
+  border-color: blue;
 }
 
 h3 {
@@ -7,6 +9,7 @@ h3 {
 }
 
 container {
-  margin: 10px;
-   
+  width 50%;
+  font-family: sans-serif;
+
 }
