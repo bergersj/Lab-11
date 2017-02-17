@@ -12,10 +12,14 @@ $.get('http://www.reddit.com/r/aww/.json').done(function(responseBody) {
     var author = post.data.author;
     var score = post.data.score;
     var thumbnail = post.data.thumbnail;
+    var img = $('<img />', {
+        src: thumbnail
+      });
+
     var container = document.createElement("container")
 
-    $('body').append(container)
-    $(container).append('<h3>' + title + '</h3><h5>' + 'Author: ' + author + '</h5><p>' +'Posting score: ' + score + '</p><br><a href=thumbnail>' + thumbnail +  '</a><hr><hr>');
+    $('body').append(container).append(img);
+    $(container).append('<h3>' + title + '</h3><h5>' + 'Author: ' + author + '</h5><p>' +'Posting score: ' + score + '</p><br>');
   });
 
 
