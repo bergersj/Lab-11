@@ -18,7 +18,7 @@ $.get('http://www.reddit.com/r/aww/.json').done(function(responseBody) {
 
     var container = document.createElement("container")
 
-    $('body').append(container).append(img);
+    $('body').append(container).append(img).append('<hr><hr>');
     $(container).append('<h3>' + title + '</h3><h5>' + 'Author: ' + author + '</h5><p>' +'Posting score: ' + score + '</p><br>');
   });
 
